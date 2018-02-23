@@ -23,7 +23,7 @@ export class ChatComponent {
       this.conversation.push({
         avatar: 'android',
         from: 'Bot',
-        content: response.result.fulfillment['speech'] || 'I can\'t seem to figure that out!'
+        content: response.result.fulfillment['speech'] || message.value
       });
       message.value = '';
     });
