@@ -25,6 +25,6 @@ form {
     left: 33%;
 }
 
-.mat-line{
-    white-space: unset;
+p.mat-line span{
+    white-space: normal;
 }
