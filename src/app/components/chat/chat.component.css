@@ -9,7 +9,7 @@
 }
 
 mat-list {
-    height:500px;
+    height:400px;
     max-height: 60%;
     overflow-y: scroll;
 }
@@ -23,4 +23,8 @@ form {
     position: fixed;
     bottom: 0;
     left: 33%;
+}
+
+.mat-line{
+    white-space: unset;
 }
