@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation} from '@angular/core';
 
 import { client } from './../../dialog-flow-client/dialog-flow.client';
 import { IMessage } from './../../models/message';
@@ -6,7 +6,8 @@ import { IMessage } from './../../models/message';
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.component.html',
-  styleUrls: ['./chat.component.css']
+  styleUrls: ['./chat.component.css'],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class ChatComponent {
 

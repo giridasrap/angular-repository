@@ -1,7 +1,7 @@
 .example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
+    /*min-width: 150px;
+    max-width: 500px;*/
+    width: 50%;
 }
 
 .example-full-width {
@@ -9,8 +9,8 @@
 }
 
 mat-list {
-    height:400px;
-    max-height: 60%;
+    height:75vh;
+    /*max-height: 60%;*/
     overflow-y: scroll;
 }
 
@@ -21,10 +21,14 @@ mat-icon {
 
 form {
     position: fixed;
-    bottom: 0;
-    left: 33%;
+    bottom: 2vh;
+    left: 20%;
 }
 
 p.mat-line span{
-    white-space: normal;
+    white-space: pre-wrap;
 }
+
+.mat-list .mat-list-item /deep/.mat-list-item-content {
+    height: auto;
+  }
