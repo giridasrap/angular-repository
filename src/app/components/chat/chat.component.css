@@ -35,8 +35,8 @@ form {
     left: 20%;
 }
 
-p.Bot span{
-    white-space: pre-wrap;    
+p.mat-line span{
+    white-space: pre-line;    
 }
 
 .mat-list .mat-list-item /deep/.mat-list-item-content {
