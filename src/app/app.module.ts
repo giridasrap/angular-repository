@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import {NgxAutoScrollModule} from "ngx-auto-scroll";
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
@@ -16,7 +17,8 @@ import { ChatComponent } from './components/chat/chat.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule
+    MaterialModule,
+    NgxAutoScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent],
