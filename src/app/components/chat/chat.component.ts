@@ -30,4 +30,14 @@ export class ChatComponent {
     });
   }
 
+  ngOnInit(){
+    client.textRequest("hi").then((response) => {
+      this.conversation.push({
+        avatar: 'android',
+        from: 'Bot',
+        content: response.result.fulfillment['speech'] || 'I can\'t seem to figure that out!'
+      });
+      //message.value = '';
+    });
+  }
 }
