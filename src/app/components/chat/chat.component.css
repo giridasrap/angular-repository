@@ -14,21 +14,48 @@ mat-list {
     overflow-y: scroll;
 }
 
-mat-icon {
-    color: purple;
+.mat-list-item:nth-child(odd) mat-icon {
+    color: yellowgreen;
     cursor: pointer;
+    margin-left: 20px;
 }
 
+.mat-list-item:nth-child(even) mat-icon {
+    color: orange;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.mat-list-item{
+    margin-bottom: 20px;
+}
 form {
     position: fixed;
     bottom: 2vh;
     left: 20%;
 }
 
-p.mat-line span{
-    white-space: pre-wrap;
+p.Bot span{
+    white-space: pre-wrap;    
 }
 
 .mat-list .mat-list-item /deep/.mat-list-item-content {
     height: auto;
   }
+
+.mat-list .mat-list-item:nth-child(odd) /deep/ .mat-list-text{
+    background-color: orange;  
+    padding: 5px 5px 5px 5px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 50px;
+	width: auto
+}
+
+.mat-list .mat-list-item:nth-child(even) /deep/ .mat-list-text{
+    background-color:yellowgreen;
+    padding: 5px 5px 5px 5px;
+    color: white;
+    border-radius: 5px;
+    width: auto
+}
